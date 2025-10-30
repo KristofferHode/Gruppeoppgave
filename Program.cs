@@ -1,4 +1,7 @@
-﻿namespace Gruppeoppgave;
+﻿using System.Data;
+using KristofferCLI.Commands;
+
+namespace Gruppeoppgave;
 
 public class Program
 {
@@ -10,6 +13,18 @@ public class Program
             string? input = Console.ReadLine();
             if (input == "exit") break;
             Console.WriteLine($" Du skrev: {input}");
+        }
+        switch (command)
+        {
+            case "pwd":
+                PwdCommand.Execute();
+                break;
+            case "head":
+                HeadCommand.Execute(argument);
+                break;
+            case "tail":
+                TailCommand.Execute(argument);
+                break;
         }
     }
 }
