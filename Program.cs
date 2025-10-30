@@ -4,12 +4,6 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Hello, orange World!");
-        Console.WriteLine({$numberList});
-    
-    
-    
-    
-    
+        Console.WriteLine("Hello, World!");
     }
 }
