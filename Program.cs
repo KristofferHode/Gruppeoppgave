@@ -4,6 +4,12 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        while (true)
+        {
+            Console.WriteLine("> ");
+            string? input = Console.ReadLine();
+            if (input == "exit") break;
+            Console.WriteLine($" Du skrev: {input}");
+        }
     }
 }
